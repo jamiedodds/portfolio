@@ -1,0 +1,100 @@
+/************ mobile and tablet ************/
+
+body {
+	background-color: #fff;
+	font-family: arial, courier;
+	text-align: center;
+}
+
+.boxSizing {
+	padding-left: 10px;
+	padding-top: 10px;
+	padding-right: 10px;
+	padding-bottom: 10px;
+}
+
+#navComputer {
+	display: none;
+}
+
+/************ mobile nav ************/
+
+.removeLeftPadding ul, .removeLeftPadding {
+	padding-left: 0;
+}
+
+#mobileLinks ul li {
+	background-color: #000;
+	color: #fff;
+	padding-top: 15px;
+	padding-bottom: 15px;
+}
+
+button {
+	float: right;
+    top: 0;
+    right: 0;
+    z-index: 1000;
+    position: absolute;
+}
+
+ul li {
+	list-style: none;
+}
+
+/************ gallery ************/
+
+.blackWhite {
+	width: 90%;
+
+}
+
+.flexContainer {
+   display: -webkit-flex;
+   display: flex;
+   -webkit-flex-direction: row /* works with row or column */
+   flex-direction: row;
+   -webkit-align-items: center;
+   align-items: center;
+   -webkit-justify-content: center;
+   justify-content: center;
+}
+
+.enlarged {
+    width: 100%;
+    z-index: 1000;
+    position: fixed;
+    padding: 0;
+    display: block;
+    left: 0;
+    top: 10%;
+}
+
+/************ slider ************/
+
+#slider {
+    width: 100%;
+    overflow: hidden;
+}
+
+#slider .slides {
+    display: block;
+    width: 6000px;
+    height: 400px;
+    margin: 0;
+    padding: 0;
+}
+
+#slider .slide {
+    float: left;
+    list-style-type: none;
+    width: 720px;
+    height: 400px;
+}
+
+/* helper css, since we don't have images */
+.slide1 {background-image: url("images/building.jpg");}
+.slide2 {background-image: url("images/camera.jpg");}
+.slide3 {background-image: url("images/car.jpg");}
+.slide4 {background-image: url("images/landscape.jpg");}
+

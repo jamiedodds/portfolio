@@ -1,0 +1,140 @@
+/************ computer ************/
+
+body {
+	background-color: #fff;
+	font-family: arial, courier;
+	text-align: left;
+}
+
+.boxSizing {
+	padding-left: 10px;
+	padding-top: 10px;
+	padding-right: 10px;
+	padding-bottom: 10px;
+}
+
+#navComputer {
+
+}
+
+#navMobile {
+	display: none;
+}
+
+/************ nav ************/
+
+#navComputer ul li {
+	list-style: none;
+}
+
+#navComputer ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    overflow: hidden;
+    background-color: #333;
+}
+
+#navComputer li {
+    float: left;
+}
+
+#navComputer li a {
+    display: inline-block;
+    color: white;
+    text-align: center;
+    padding: 14px 16px;
+    text-decoration: none;
+}
+
+#navComputer li a:hover, .dropdown:hover .dropbtn {
+    background-color: #333;
+}
+
+#navComputer li.dropdown {
+    display: inline-block;
+}
+
+#navComputer .dropdown-content {
+	color: black;
+    display: none;
+    position: absolute;
+    background-color: #f9f9f9;
+    min-width: 160px;
+    box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+    z-index: 1;
+}
+
+#navComputer .dropdown-content a {
+    color: black;
+    padding: 12px 16px;
+    text-decoration: none;
+    display: block;
+    text-align: left;
+}
+
+#navComputer .dropdown-content a:hover {background-color: #f1f1f1}
+
+#navComputer .dropdown:hover .dropdown-content {
+    display: block;
+}
+
+/************ gallery ************/
+
+.blackWhite {
+	width: 90%;
+
+}
+
+.flexContainer {
+   display: -webkit-flex;
+   display: flex;
+   -webkit-flex-direction: row /* works with row or column */
+   flex-direction: row;
+   -webkit-align-items: center;
+   align-items: center;
+   -webkit-justify-content: center;
+   justify-content: center;
+}
+
+.enlarged {
+    width: 100%;
+    z-index: 1000;
+    position: fixed;
+    padding: 0;
+    display: block;
+    left: 0;
+    top: 10%;
+}
+
+.dropText {
+	color: black;
+}
+
+/************ slider ************/
+
+#slider {
+    width: 100%;
+    overflow: hidden;
+}
+
+#slider .slides {
+    display: block;
+    width: 6000px;
+    height: 400px;
+    margin: 0;
+    padding: 0;
+}
+
+#slider .slide {
+    float: left;
+    list-style-type: none;
+    width: 720px;
+    height: 400px;
+}
+
+/* helper css, since we don't have images */
+.slide1 {background-image: url("images/building.jpg");}
+.slide2 {background-image: url("images/camera.jpg");}
+.slide3 {background-image: url("images/car.jpg");}
+.slide4 {background-image: url("images/landscape.jpg");}

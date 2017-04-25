@@ -1,0 +1,124 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Example Website</title>
+</head>
+
+<link href="css/hamburgers.css" rel="stylesheet">
+<link rel="stylesheet" media="screen and (max-width: 800px)" href="css/mobile_style.css" />
+<link rel='stylesheet' media='screen and (min-width: 801px)' href='css/style.css' />
+<link type="text/css" rel="stylesheet" href="css/featherlight.css" />
+<link type="text/css" rel="stylesheet" href="css/featherlight.gallery.css" />
+
+<body>
+
+<div class="boxSizing">
+<h1 id="siteHeader">Site Header</h1>
+</div>
+
+<div id="navMobile" class="boxSizing">
+
+<button class="hamburger hamburger--spin" type="button" onclick="myFunction()">
+  <span class="hamburger-box">
+    <span class="hamburger-inner"></span>
+  </span>
+</button> 
+
+<nav class="removeLeftPadding" id="mobileLinks" style="display: none;">
+	<ul>
+		<li>Link 1</li>
+		<li>Link 2</li>
+		<li>Link 3</li>
+		<li>Link 4</li>
+		<li>Link 5</li>
+	</ul>
+
+</nav>
+
+</div>
+
+<div id="navComputer" class="boxSizing">
+<nav>
+	<ul>
+		<li><a class="active" href="#home">Home</a></li>
+		<li><a href="#news">News</a></li>
+		<li><a href="#contact">Contact</a></li>
+		<li class="dropdown">
+    		<a href="javascript:void(0)" class="dropbtn">Dropdown</a>
+    			<div class="dropdown-content">
+      				<a href="#">Link 1</a>
+      				<a href="#">Link 2</a>
+      				<a href="#">Link 3</a>
+    			</div>
+  		</li>
+		<li><a href="#blog">Blog</a></li>
+	</ul>
+
+</nav>
+</div>
+
+<div id="sliderGallery" class="boxSizing">
+	<h2>Slider gallery</h2>
+
+<div class="container">
+
+            <div id="slider">
+                <ul class="slides">
+                    <li class="slide slide1"></li>
+                    <li class="slide slide2"></li>
+                    <li class="slide slide3"></li>
+                    <li class="slide slide4"></li>
+                    <li class="slide slide1"></li>
+                </ul>
+            </div>
+
+        </div>
+
+
+</div>
+
+<div id="aboutUs" class="boxSizing">
+	<h2>About Us</h2>
+		
+		<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vivamus ornare arcu non enim suscipit rutrum. Ut eu suscipit lorem. Proin in nisl ultrices, consequat est a, hendrerit mi. In eget tristique tortor, ut lobortis nulla. Nullam sed ligula in urna placerat pulvinar sed sed tortor. Duis tincidunt, dui nec tempor bibendum, purus neque suscipit nunc, ac ornare libero nulla id enim. Sed id nunc eros. Sed at elit a nunc consectetur rhoncus ut non odio. Pellentesque vel consequat nisl. Quisque et dignissim diam. Integer sagittis sit amet nisi id tempus. Praesent quis pharetra libero. Nulla facilisi. Sed eget pulvinar velit. Maecenas tincidunt dictum dapibus.</p>
+	
+
+</div>
+
+<div id="mainGallery" class="boxSizing">
+	<h2>Gallery</h2>
+
+		<ul class="removeLeftPadding flexContainer">
+			<li class="blackWhite flexContainer">
+				<a class="thumbnail gallery blackWhite flexContainer" href="images/building.jpg"><img class="blackWhite" src="images/building.jpg" /></a>
+			</li>
+
+			<li class="blackWhite flexContainer">
+				<a class="thumbnail gallery blackWhite flexContainer" href="images/car.jpg"><img class="blackWhite" src="images/car.jpg" /></a>
+			</li>
+		</ul>
+
+		<ul class="removeLeftPadding flexContainer">
+			<li class="blackWhite flexContainer">
+				<a class="thumbnail gallery blackWhite flexContainer" href="images/camera.jpg"><img class="blackWhite" src="images/camera.jpg" /></a>
+			</li>
+
+			<li class="blackWhite flexContainer">
+				<a class="thumbnail gallery blackWhite flexContainer" href="images/landscape.jpg"><img class="blackWhite" src="images/landscape.jpg" /></a>
+			</li>
+		</ul>
+
+</div>
+
+
+<script src="http://code.jquery.com/jquery-1.11.0.min.js"></script>
+<script type="text/javascript" src="script/script.js"></script>
+<script src="//code.jquery.com/jquery-latest.js"></script>
+<script src="//cdn.rawgit.com/noelboss/featherlight/1.7.2/release/featherlight.min.js" type="text/javascript" charset="utf-8"></script>
+
+<script src="script/featherlight.js" type="text/javascript" charset="utf-8"></script>
+<script src="script/featherlight.gallery.js" type="text/javascript" charset="utf-8"></script>
+
+
+</body>
+</html>

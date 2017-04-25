@@ -1,0 +1,215 @@
+<!doctype html>
+<html>
+<head>
+<meta charset="utf-8">
+<link href="http://www.jqueryscript.net/css/jquerysctipttop.css" rel="stylesheet" type="text/css">
+<title>jQuery jtaCarousel Demo</title>
+<style>
+html, body {
+  margin:0; padding:0;
+}
+
+html { box-sizing: border-box; }
+
+*, *:before, *:after { box-sizing: border-box; }
+
+body {
+  margin: 0;
+  line-height: 1.5;
+  background-color: white;
+  font-family: 'Open Sans', Georgia, Times, "Times New Roman", serif;
+  color: #333;
+}
+
+
+/* highlight colors */
+::-moz-selection {
+ background-color: #333;
+ color: white;
+}
+
+::selection {
+  background-color: #333;
+  color: white;
+}
+
+/* ul-reset */
+
+ul.banner {
+  padding-left: 0;
+  margin-top: 0;
+  margin-bottom: 0;
+  list-style: none;
+}
+
+/* container */
+
+.container {
+  position: relative;
+  margin-top: 150px;
+  width: 96%;
+  margin-right: auto;
+  margin-left: auto;
+  text-align: center;
+}
+
+/* jtaCarousel */
+
+.jtaCarousel {
+  position: relative;
+  overflow: hidden;
+}
+
+.banner-controls {
+  position: absolute;
+  top: 50%;
+  -webkit-transform: translateY(-50%);
+  transform: translateY(-50%);
+}
+
+.banner-prev-position {
+  left: 0;
+  padding-left: .75em;
+}
+
+.banner-next-position {
+  right: 0;
+  padding-right: .75em;
+}
+
+.banner-control-button {
+  border-radius: 100%;
+  font-size: 2em;
+  color: white;
+  cursor: pointer;
+  -webkit-transition: opacity 100ms ease-in-out;
+  transition: opacity 100ms ease-in-out;
+}
+
+.banner-control-button:hover { opacity: .5; }
+
+.banner {  width: calc(100% * 5);
+}
+
+.banner-item {
+  float: left;
+  width: calc(100% / 5);
+}
+
+.banner-item > div {
+  background-size: cover;
+  background-position: 50% 50%;
+  height: 450px;
+  line-height: 450px;
+  font-size: 2em;
+  color: #fff;
+}
+
+.banner-location {
+  position: absolute;
+  z-index: 2;
+  bottom: .75em;
+  left: 50%;
+  -webkit-transform: translateX(-50%);
+  transform: translateX(-50%);
+  height: .75em;
+  line-height: 1;
+  cursor: default;
+}
+
+.banner-indicator {
+  position: relative;
+  top: 0;
+  display: inline-block;
+  width: .75em;
+  height: .75em;
+  border-radius: 100%;
+  margin-left: 3px;
+  background-color: rgba(255, 255, 255, 0.5);
+}
+
+.banner-indicator:first-child { margin-left: 0; }
+
+.banner-indicator.selected {
+  background-color: white;
+  cursor: auto;
+}
+</style>
+</head>
+
+<body>
+<div id="jquery-script-menu">
+<div class="jquery-script-center">
+<ul>
+<li><a href="http://www.jqueryscript.net/slider/Responsive-Auto-rotating-Banner-Carousel-Plugin-With-jQuery-jtaCarousel.html">Download This Plugin</a></li>
+<li><a href="http://www.jqueryscript.net/">Back To jQueryScript.Net</a></li>
+</ul>
+<div class="jquery-script-ads"><script type="text/javascript"><!--
+google_ad_client = "ca-pub-2783044520727903";
+/* jQuery_demo */
+google_ad_slot = "2780937993";
+google_ad_width = 728;
+google_ad_height = 90;
+//-->
+</script>
+<script type="text/javascript"
+src="http://pagead2.googlesyndication.com/pagead/show_ads.js">
+</script></div>
+<div class="jquery-script-clear"></div>
+</div>
+</div>
+<div class="container">
+  <h1> jQuery jtaCarousel Demo </h1>
+  <div class="jtaCarousel">
+    <div class="banner-controls banner-prev-position">
+      <div class="banner-control-button banner-prev"> &lt; </div>
+      <!-- /.banner-control-button banner-prev --> 
+    </div>
+    <!-- /.banner-controls banner-prev-position -->
+    <ul class="banner">
+      <li class="banner-item">
+        <div style=" background-image:url(https://unsplash.it/1800/1200/?random)">Slide 1</div>
+      </li>
+      <li class="banner-item">
+        <div style="background-image:url(https://unsplash.it/1800/1100/?random)">Slide 2</div>
+      </li>
+      <li class="banner-item">
+        <div style="background-image:url(https://unsplash.it/1800/1000/?random)">Slide 3</div>
+      </li>
+      <li class="banner-item">
+        <div style="background-image:url(https://unsplash.it/1600/800/?random)"></div>
+      </li>
+      <li class="banner-item">
+        <div style="background-image:url(https://unsplash.it/1600/900/?random)"></div>
+      </li>
+    </ul>
+    <!-- /.banner -->
+    <div class="banner-controls banner-next-position">
+      <div class="banner-control-button banner-next"> &gt; </div>
+      <!-- /.banner-control-button banner-next --> 
+    </div>
+    <!-- /.banner-controls banner-next-position -->
+    <div class="banner-location"></div>
+    <!-- /.banner-location --> 
+  </div>
+  <!-- /.jtaCarousel --> 
+</div>
+<!-- /.container --> 
+<script src="https://code.jquery.com/jquery-3.1.1.min.js"></script> 
+<script src="jtaCarousel.js"></script>
+<script type="text/javascript">
+
+  var _gaq = _gaq || [];
+  _gaq.push(['_setAccount', 'UA-36251023-1']);
+  _gaq.push(['_setDomainName', 'jqueryscript.net']);
+  _gaq.push(['_trackPageview']);
+
+  (function() {
+    var ga = document.createElement('script'); ga.type = 'text/javascript'; ga.async = true;
+    ga.src = ('https:' == document.location.protocol ? 'https://ssl' : 'http://www') + '.google-analytics.com/ga.js';
+    var s = document.getElementsByTagName('script')[0]; s.parentNode.insertBefore(ga, s);
+  })();
+
+</script>
+</body>
+</html>
